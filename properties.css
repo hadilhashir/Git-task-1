@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.72;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+}
+
+.feature-in-text {
+  text-align: center;
+}
+
+.secondary-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #0d263b;
+  margin-bottom: 1rem;
+}
+
+.secondary-paragrah {
+  font-size: 1.6rem;
+  color: #696969;
+}
+
+/* Feature in section gallery*/
+
+.feature-in-gallery {
+  padding: 8rem 0 6rem 0;
+  background-color: #fff;
+}
+
+.feature-in-box-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding: 3rem 1.6rem;
+}
+
+.feature-in-box-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.4rem;
+  width: 100%;
+}
+
+.feature-in-box-gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.4s;
+}
+
+.feature-in-box-gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* .overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.feature-gallery-overlay::before {
+  content: "";
+  display: block;
+  background-color: #0d263b;
+  position: absolute;
+  opacity: 0.3;
+  border-radius: 0.4rem;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  transition: all 0.3s;
+}
+
+.feature-gallery-overlay:hover:before {
+  opacity: 0.5;
+  border-radius: 0.4rem;
+}
+
+.feature-in-gallery-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.feature-in-gallery-icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  color: #fff;
+  margin-bottom: 3.4rem;
+}
+
+.feature-in-gallery-logo span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
