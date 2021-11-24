@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.72;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+}
+
+.secondary-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #0d263b;
+  margin-bottom: 1rem;
+}
+
+.secondary-paragrah {
+  font-size: 1.6rem;
+  color: #696969;
+}
+
+/* Register section */
+.register-section {
+  background-image: url("../images/bg-h11.jpg");
+  padding: 6.4rem 0 7rem 0;
+}
+
+.register-text {
+  text-align: center;
+}
+
+.register-heading,
+.register-paragrah {
+  color: #fff;
+}
+
+.register-paragrah {
+  font-size: 1.4rem;
+  margin: 1.4rem 0 2.4rem 0;
+}
+
+.register-button {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0061df;
+  background-color: #fff;
+  padding: 1.8rem 5rem;
+  border-radius: 0.4rem;
+}
+
+.register-button:hover {
+  color: #ec2549;
+}
